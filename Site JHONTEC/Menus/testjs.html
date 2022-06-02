@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Imagem dinamica</title>
+    <style>
+        body{
+            width: auto;
+            background-color: blue;
+        }
+        body > header > h1 {
+            text-align: center;
+            margin: auto;
+            width: 800px;
+            color: black;
+            background-color: white;
+        }
+        body > div {
+            text-align: center;
+            background-color: white;
+            width: 800px;
+            margin: auto;
+        }
+        section{
+            margin: auto;
+            width: 800px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Orçamento</h1>
+    </header>
+    <div>
+        <h2>Dispositivo</h2>
+    </div>
+    <section>
+       <form id="disp">
+           <fieldset>
+               Escolha o seu dispositivo:
+               <input type="radio" name="disp_n" id="disp_n" onclick="imagemNote()"/><label for="disp_n"> Notebook</label>
+               <input type="radio" name="disp_n" id="disp_p" onclick="imagemNote()"/><label for="disp_p"> Computador</label>
+               <img id="img" src="" alt="">
+           </fieldset>
+       </form>
+    </section>
+<script>
+    function imagemNote(){
+        var note = document.getElementById('disp_n')
+        var pc = document.getElementById('disp_p')
+        var img = document.getElementById('img')
+        if(note.checked){
+            img.setAttribute('src', '../imagens/imagens-orçamento/laptop-web.png')
+            
+        }if(pc.checked){
+            img.setAttribute('src', '../imagens/imagens-orçamento/pc-web.png')
+        }
+        img.style.float ='right'
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jhontec</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet"> 
+</head>
+<script>
+    function mudaFoto(foto){
+        document.getElementById("imagemMuda").src = foto;
+    }
+</script>
+<body>
+
+<div id="Interface">
+    <header id="Cabecalho">
+        <hgroup>
+            <h1>Jhontec</h1>
+            <h2>Menos problemas mais soluções!</h2>
+       <!--<figure class="logo-empresa">
+            <img src="../../Site JHONTEC/imagens/imagens-home/Jhontec-removebg-preview.png" width="350px"/>-->
+        </figure>
+        <figure class="imgMuda">
+            <img id="imagemMuda" src="../imagens/icones/menu-principal/home-png.png" width="280px"/>
+        </figure>
+        </hgroup>
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('../imagens/icones/menu-principal/home-png.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/home-png.png')"><a href="Home.html">Home</a></li>
+                <li onmouseover="mudaFoto('../imagens/icones/menu-principal/orcamento-png.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/home-png.png')"><a href="Faça%20seu%20orçamento.html">Solicite seu Orçamento</a></li>
+                <li onmouseover="mudaFoto('../imagens/icones/menu-principal/contato.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/home-png.png')"><a href="Contato.html">Contato</a></li>
+                <li onmouseover="mudaFoto('../imagens/icones/menu-principal/feedback.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/home-png.png')"><a href="Feedback.html">Feedback</a> </li>
+        </ul>
+    </nav>
+    </header>
+<section id="corpo1">
+    <article class="oque-e">
+        <header id="cabeçalho-oque">
+                <hgroup>
+            <h1>O que é a Jhontec?</h1>
+                    <p>A jhontec é uma empresa que visa prestar um serviço de qualidade ágil e por um preço justo pois sabemos que em tempos como o de hoje tempo é produtividade e produtividade é dinheiro, por isso sempre tentamos prestar o serviço de forma mais rápida possível e matendo sempre o padrão de qualidade <b>Jhontec</b></p>
+
+                </hgroup>
+        </header>
+    </article>
+</section>
+<section id="corpo2">
+    <article class="Porque">
+        <header id="cabecalho-pq">
+            <hgroup>
+            <h1>Porque escolher a Jhontec?</h1>
+            <p>A jhontec oferece um diferencial em seu sistema de atendimento onde premite que os seus clientes <a href="../Rastreio/Rastreio.html" target="_blank"> acompanhe</a> de forma fácil e online como está o processo de manutenção do seu dispositivo</p>
+            </hgroup>
+        </header>
+    </article>
+</section>
+    <section id="corpo3">
+        <article id="Videos">
+            <header id="cabecalho-video">
+                <hgroup>
+                    <h1>Vídeos</h1>
+                    <p>Segue a baixo alguns vídeos de resultados de serviços contratados por nossos clientes em formato de antes e depois</p>
+                    <p>[VÍDEO MANUTENÇÃO DE FANS]</p>
+                </hgroup>
+            </header>
+        </article>
+    </section>
+</div>
+</body>
+</html>

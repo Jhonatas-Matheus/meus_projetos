@@ -1,0 +1,101 @@
+@media screen and (min-width:1600px) {
+    
+
+body{
+    color: white;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+    background: url('../imagens/background_site.jpg') no-repeat ;
+    background-size: 100%;
+}
+#cabecalho{
+    text-shadow: 0px 0px 10px black;
+}
+#body_2{
+    height: 782px;
+    margin-top: -20px;
+    background-color: rgba(255, 255, 255, 0.253);
+
+}
+#simulation {
+    text-align: center;
+    width: 1000px;
+}
+#treinador_id{
+    width: 100px;
+    text-align: center;
+    margin-top: -30px;
+}
+#botao{
+    margin-top: -5px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(240, 245, 245);
+    border-radius: 100px;
+}
+#botao:hover{
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(46, 48, 48);
+    border-radius: 100px;
+    scale: 1.1;
+    cursor: pointer;
+}
+#saudacao{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+}
+@media screen and (min-width:1920px) {      
+
+body{
+    color: white;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+    background: url('../imagens/background_site.jpg') no-repeat ;
+    background-size: 100%;
+}
+#cabecalho{
+    text-shadow: 0px 0px 10px black;
+}
+#body_2{
+    height: 932px;
+    margin-top: -20px;
+    background-color: rgba(255, 255, 255, 0.253);
+
+}
+#simulation {
+    text-align: center;
+    width: 1000px;
+}
+#treinador_id{
+    width: 100px;
+    text-align: center;
+    margin-top: -30px;
+}
+#botao{
+    margin-top: -5px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(240, 245, 245);
+    border-radius: 100px;
+}
+#botao:hover{
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(46, 48, 48);
+    border-radius: 100px;
+    scale: 1.1;
+    cursor: pointer;
+}
+#saudacao{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+   
+}
+}

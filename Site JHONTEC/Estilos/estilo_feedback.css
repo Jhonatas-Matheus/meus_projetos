@@ -1,0 +1,122 @@
+﻿@charset "utf-8";
+@font-face {
+    font-family: 'Fonte-Logo';
+    src: url("../CURSO HTML CSS JAVA SCRIPT/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf");
+    font-family: 'Letra-Massa';
+    src: url("../GrapeNuts-Regular.ttf");
+    @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Oswald:wght@200;700&display=swap');
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #white;
+    color: rgba(0,0,0,1);
+    background: url("../Site JHONTEC/imagens/backgrounds/fundo.jpg");
+    }
+p{
+    text-align: justify;
+    text-ident: 50px;
+}
+div#Interface {
+    width: 1000px;
+    background-color: white;
+    margin: -30px auto 10px auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 10px 10px 10px;
+}
+header#Cabecalho {
+    border-bottom: 1px #606060;
+    height: 350px;
+    background: url("Jhontec-removebg-preview.png") no-repeat left 20px top 90px;
+    background-size: 330px;
+    background-radius: 200px;
+    position: relative;
+    top: -20px;
+}
+header#Cabecalho h1 {
+        font-family: 'Letra-Massa', cursive;
+        font-size: 50pt;
+        color: darkblue;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+}
+header#Cabecalho h2 {
+    font-family: 'Letra-Massa';
+    font-size: 25pt;
+    color: darkblue;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: -10px;
+
+}
+figure.logo-empresa {
+    display: none;
+}
+figure.imgMuda img{
+    display:block;
+    background-color: rgba(103,106,106,.2);
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px black;
+    position: absolute;
+    left: 600px;
+    top: 100px;
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 400px;
+}
+nav#menu {
+    display:block;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu li:hover {
+    background-color: darkblue;
+}
+nav#menu a:hover {
+    color: white;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 20px;
+}
+div#Feedbacks {
+    width: 1000px;
+    background-color: white;
+    margin: auto auto 10px auto;
+    padding: 10px 10px 10px 10px;
+}
+div#Feedbacks h1{
+    font-family: 'Letra-Massa';
+    text-align: center;
+    color: darkblue;
+    font-size: 50px;
+}
+div#Feedback_2 {
+    width: 1000px;
+    padding: 10px;
+    background-color: white;
+    position: realtive;
+    margin-top: 10px;
+    margin: auto auto 10px auto;
+}
+div#Feedback_2 h1 {
+    font-family: 'Letra-Massa';
+    text-align: center;
+    color: darkblue;
+    font-size: 50px;
+}

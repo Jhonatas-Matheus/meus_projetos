@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jhontec</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet"> 
+</head>
+<script>
+    function mudaFoto(foto){
+        document.getElementById("imagemMuda").src = foto;
+    }
+    function notepc(maq){
+        document.getElementById("maq").src = maq;
+    }
+    function fotoEstatica(fotoE){
+        document.getElementById("noteEstatico").src = noteEstatico;
+    }
+</script>
+<body>
+
+<div id="Interface">
+    <header id="Cabecalho">
+        <hgroup>
+            <h1>Jhontec</h1>
+            <h2>Menos problemas mais soluções!</h2>
+            <figure class="logo-empresa">
+                <img src="../Jhontec-removebg-preview.png" width="350px"/>
+            </figure>
+            <figure class="imgMuda">
+                <img id="imagemMuda" src="../imagens/icones/menu-principal/orcamento-png.png" width="280px"/>
+            </figure>
+        </hgroup>
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('../imagens/icones/menu-principal/home-png.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/orcamento-png.png')"><a href="Home.html">Home</a></li>
+                <li onmouseover="mudaFoto('../imagens/icones/menu-principal/orcamento-png.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/orcamento-png.png')"><a href="Faça%20seu%20orçamento.html">Solicite seu Orçamento</a></li>
+                <li onmouseover="mudaFoto('../imagens/icones/menu-principal/contato.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/orcamento-png.png')"><a href="Contato.html">Contato</a></li>
+                <li onmouseover="mudaFoto('../imagens/icones/menu-principal/feedback.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/orcamento-png.png')"><a href="Feedback.html">Feedback</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="corpo-orcamento">
+        <article class="orcamento-form">
+            <header id="cabecalho-orcamento">
+                <hgroup>
+                    <h1>Orçamento</h1>
+                    <h2>Faça Já o seu orçamento sem compromisso!</h2>
+            </header>
+                    <b><p id="p_form">A seguir preencha o formulário marcando as informações que melhor descreve o problema do seu dispositivo e ao final se possivel anexe algumas fotos ou um vídeo demonstrando o defeito.</p></b>
+                    </hgroup>
+        </article>
+        <form id="form_id" method="post" action="../forms/receber-form.php">
+            <fieldset id="Cliente">
+                <legend>Seus Dados:</legend>
+                <p>Nome:<input type="text" name="tNome" id="cNome" size="40" maxlength="40" placeholder="Nome Completo"/></p>
+                <p>Número para contato:<input type="text" name="tPhone" id="tPhone" maxlength="15" placeholder="Digite seu número de telefone"></p>
+                <p>Este número é Whatsaap?</p>
+                <p><input type="radio" name="tZap" id="cSim"/> <label for="cSim">Sim</label>
+                   <input type="radio" name="tZap" id="cNao"/> <label for="cNao">Não</label></p>
+                <p>Email:<input type="email" name="tEmail" id="cEmail" size="30"/></p>
+            </fieldset>
+            <!--Parte que eu estou trabalhando-->
+            <fieldset id="field_d">
+                <legend>Dispositivo</legend>
+                <input type="radio" name="disp_n" id="disp_n" onclick="imagemNote()"/><label for="disp_n"> Notebook</label>
+                <input type="radio" name="disp_n" id="disp_p" onclick="imagemNote()"/><label for="disp_p"> Computador</label><br>
+                <form action="">
+                   Marca:<input  type="text" name="marca_n" id="marca_id" size="20px" placeholder="Digite a marca do seu dispositivo"><br>
+                   Modelo: <input type="text" name="modelo_n" id="modelo_id" size="21px" placeholder="Digite o modelo do seu dispositivo"><br>
+                   Cor:<input type="color" name="cor_n" id="cor_id"><br>
+                   <input type="button" value="Confirmar" onclick="show_diagnostico()">
+                </form>
+                <!--<p><img src="../imagens/imagens-orçamento/fundo-branco.jpg" alt=""></p>-->
+                <p><img id="img" src="../imagens/imagens-orçamento/fundo-branco.jpg" alt=""></p>
+            </fieldset>
+            <div id="note">
+                <fieldset id="diagnostico_1">
+               <legend>Diagnóstico</legend>
+                <p>Com o seu notebook ligado à tomada pressione o botão power(Liga/Desliga) e marque a opção que melhor corresponder o comportamento do notebook</p>
+                <p><input id="cNotebookLiga" type="radio" name="quest_1"> <label onclick="show_diagnostico_2()" for="cNotebookLiga"> O notebook liga (o problema vem depois)</label></p>
+                <p><input id="cNotebookAcende" type="radio" name="quest_1"> <label onclick="hidden_diagnostico_2()" for="cNotebookAcende">O notebook acende algumas luzes e só</label> </p>
+                <p><input id="cNotebookPisca" type="radio" name="quest_1"> <label onclick="hidden_diagnostico_2()" for="cNotebookPisca">O notebook acende as luzes e a tela pisca mas não da imagem</label>  </p>
+                <p><input id="cNotebookMorto" type="radio" name="quest_1"> <label onclick="hidden_diagnostico_2()" for="cNotebookMorto" >O notebook está totalmente morto, você coloca ele na tomada pressiona o botão power e ele não apresenta nenhum sinal, nenhum led acende.</label> </p>
+                </fieldset>
+                <fieldset id="diagnostico_1-2">
+                    <legend>Após o notebook ligar</legend>
+                    <p>Após o computador ligar verifique como ele se comporta e marque a opção que melhor representar:</p>
+
+                </fieldset>
+            </div>
+            <div    id="pc">
+                <fieldset id="diagnostico_2">
+                <legend>Diagnóstico</legend>
+                 <p>Com o seu computador ligado à tomada pressione o botão power(Liga/Desliga) e marque a opção que melhor corresponder o comportamento do computador</p>
+                 <p><input id="cNotebookAcende" type="radio" name="quest_1"> O notebook acende algumas luzes e só</p>
+                 <p><input id="cNotebookPisca" type="radio" name="quest_1"> O notebook acende as luzes e a tela pisca mas não da imagem </p>
+                 <p><input id="cNotebookMorto" type="radio" name="quest_1">O notebook está totalmente morto, você coloca ele na tomada pressiona o botão power e ele não apresenta nenhum sinal, nenhum led acende.</p>
+             </fieldset>
+            </div>            
+            <input type="submit" name="tBotaoEnviar" id="cBotaoEnviar" value="Enviar">
+        </form>
+    </section>
+</div>
+<script src="../scripts/script.js"></script>
+</body>
+<!--<fieldset id="Dispositivo">
+                -->
+<!--Teste
+                <input id="noteID" type="radio" name="disp"></input><label id="id_label_noteID" for="noteID" onmouseover="('../imagens/imagens-orçamento/laptop-web.png')">Notebook</label>
+                <input id="pcID" type="radio" name="disp"></input><label id="id_label_pcID" for="pcID" onmouseover="('../imagens/imagens-orçamento/pc-web.png')">Computador</label>
+                -->
+</html>

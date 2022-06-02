@@ -1,0 +1,88 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'Fonte-Logo';
+    src: url("../CURSO HTML CSS JAVA SCRIPT/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf");
+    font-family: 'Letra-Massa';
+    src: url("../Site JHONTEC/GrapeNuts-Regular.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Oswald:wght@200;700&display=swap');
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #white;
+    color: rgba(0,0,0,1);
+    background: url("../imagens/backgrounds/fundo.jpg");
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+div#Interface {
+    width: 1000px;
+    background-color: white;
+    margin: -30px auto 100px auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 10px 10px 10px;
+}
+header#Cabecalho {
+    border-bottom: 1px #606060;
+    position: relative;
+    height: 350px;
+    background:  url("../imagens/imagens-home/Jhontec-removebg-preview.png") no-repeat left 20px top 90px;
+    background-size: 330px;
+    top: -20px;
+}
+figure.logo-empresa {
+    display: none;
+    position: absolute;
+    left: 580px;
+    top: -50px;
+}
+header#Cabecalho h1{
+    font-family: 'Letra-Massa', cursive;
+    font-size: 50pt;
+    color: darkblue;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    top: -10px;
+}
+header#Cabecalho h2{
+    font-family: 'Letra-Massa', cursive;
+    font-size: 25pt;
+    color: darkblue;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 10px;
+    margin-top: -10px ;
+}
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 400px;
+}
+nav#menu  li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu li:hover{
+    background-color: darkblue;
+}
+nav#menu h1 {
+    display: none;
+}
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: white;
+}

@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+div#cab{
+    margin: -30px auto 10px auto;
+    position: relative;
+    top: -45px;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 10px 10px 10px;
+}
+header#Cabecalho{
+    text-shadow: black;
+    top: -20px;
+    color: darkblue;
+    position: relative;
+    height: 350px;
+    background-color: white;
+    background: url("../imagens/imagens-home/Jhontec-removebg-preview.png") no-repeat left 20px top 90px;
+    background-size: 330px;
+}
+header#Cabecalho > hgroup{
+    top: -50px;
+}
+header#Cabecalho > hgroup > h1{
+    font-size: 50pt
+}
+header#Cabecalho > hgroup > h2{
+    margin-top: -40px;
+    font-size: 25pt;
+}
+body{
+    margin: auto;
+    justify-content: center;
+    width: 800px;
+    font-family: 'Grape Nuts';
+    color:blue;
+    background: url('../imagens/backgrounds/fundo.jpg');
+}
+#menu{
+    list-style: none;
+    top: 20px;
+    left: 400px;
+    position: absolute;
+    display: block;
+}
+#menu > h1{
+    display: none;
+}
+#menu > ul {
+    text-transform: uppercase;
+    list-style: none;
+}
+#menu > ul> li > a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+} 
+#menu > ul > li{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #dddddd;
+    transition: 1s;
+    display: inline-block;
+    text-decoration: none;
+}
+#menu > ul> li:hover{
+    background-color: darkblue;
+
+}
+
+

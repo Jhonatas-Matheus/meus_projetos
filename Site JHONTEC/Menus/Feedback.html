@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jhontec</title>
+    
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet"> 
+    
+</head>
+<script>
+    function mudaFoto(foto){
+        document.getElementById("imagemMuda").src = foto;
+    }
+</script>
+<body>
+
+    <div id="Interface">
+        <header id="Cabecalho">
+            <hgroup>
+                <h1>Jhontec</h1>
+                <h2>Menos problemas mais soluções!</h2>
+                <figure class="logo-empresa">
+                    <img src="../Jhontec-removebg-preview.png" width="350px" />
+                </figure>
+                <figure class="imgMuda">
+                    <img id="imagemMuda" src="../imagens/icones/menu-principal/feedback.png" width="280px" />
+                </figure>
+            </hgroup>
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('../imagens/icones/menu-principal/home-png.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/feedback.png')"><a href="Home.html">Home</a></li>
+                    <li onmouseover="mudaFoto('../imagens/icones/menu-principal/orcamento-png.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/feedback.png')"><a href="Faça%20seu%20orçamento.html">Solicite seu Orçamento</a></li>
+                    <li onmouseover="mudaFoto('../imagens/icones/menu-principal/contato.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/feedback.png')"><a href="Contato.html">Contato</a></li>
+                    <li onmouseover="mudaFoto('../imagens/icones/menu-principal/feedback.png')" onmouseout="mudaFoto('../imagens/icones/menu-principal/feedback.png')"><a href="Feedback.html">Feedback</a> </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+<div id="feedbacks">
+    <section id="feedBack_1">
+        <header id="cabecalhoFeedBack_1">
+            <hgroup>
+                <h1> Cliente: Lucas Daniel</h1>
+            </hgroup>
+        </header>
+    </section>
+</div>
+<div id="feedback_2">
+    <section id="feedBack_2"
+        <header id="cabecalhoFeedBack_2">
+            <hgroup>
+                <h1>Cliente: Profit Academia</h1>
+            </hgroup>
+        </header>
+    </section>
+</div>
+</body>
+</html>

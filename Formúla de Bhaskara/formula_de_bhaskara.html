@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <link rel="html" href="./imagens.html">
+    <link rel="stylesheet" href="./Estilo.css">
+</head>
+<body>
+
+    <h1>Fórmula de Bhaskara</h1>
+    <p><output id="boasVindas"></output> </p>
+        <div>
+            <img id="bhaskara" src="https://www.estudopratico.com.br/wp-content/uploads/2014/11/formula-de-bhaskara-origem-importancia-e-exemplos-1200x675.jpg" alt="Bhaskara">
+        </div>
+        <div id="base">
+            <form name="valores">
+            <p>Insira um valor para a: <input type="number" name="tA" id="A" ></p>
+            <p>Insira um valor para b: <input type="number" name="tB" id="B"> </p>
+            <p>Insira um valor para c: <input type="number" name="tC" id="C"> </p> 
+        </form>
+            <p>O valor do seu delta é: <input type="text" id="valorDelta" readonly></p>
+            <p>O valor de x1 é: <input type="text" id="valorX1" readonly></p> 
+            <p>O valor de x2 é: <input type="text" id="valorX2"></p>
+        
+            <p><input id="button_calc" type="submit" value="Calcular" onclick="return calc() , formulaD()" > </p>
+        </div>
+        <div class="calculoD">
+            <h2>Cálculo do Delta:</h2>
+            <p>&Delta; = <output id="delta_l1"></output></p>
+            <p>&Delta; = <output id="delta_l2"></output></p>
+            <p>&Delta; = <output id="delta_l3"></output></p>
+            <!--<p>&Delta; &#61; <output></output></p>-->
+        </div>
+        <div class="calculoX">
+            <h2>Cálculo do X1 e X2:</h2>
+            <p>x = <output id="x_l1"></output> </p>
+            <p>x = <output id="x_l2"></output> </p>
+            <p>x' = <output id="x_l3"></output> </p>
+            <p>x' = <output id="x_l4"></output> </p>
+            <p>x'' = <output id="x_l5"></output> </p>
+            <p>x'' = <output id="x_l6"></output> </p>
+        </div>        
+    <script src="Scripts.js">
+    </script>
+    <footer id="pe">
+        <p>© Todos os direitos reservardos aos meus estudos </p>
+        <p class="arroba">@Jondací</p>
+    </footer>
+</body>
+</html>

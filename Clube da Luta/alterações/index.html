@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon - Clube da Luta</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div id="body_2">
+<header>
+</header>
+    <div>
+        <output id="saudacao"></output>
+        <output id="post"></output>
+        <!--<img src="../imagens/Pokemon/201 - Unown.jpg" alt="">-->
+            
+    </div>
+    </div>
+    <div id="player_1">
+        <div id="botoes_1">
+            <input type="button" value="Attack" onclick="attack_1()"> <input type="button" value="Attack Especial" onclick="post()">
+            <div id="atributos_1">
+                <h2>Atributos</h2>
+                Vida:<input type="number" name="vida" id="vida" readonly><br>
+                Attack:<input type="number" name="attack" id="attack" readonly><br>
+                AttackE:<input type="number" name="attack_e" id="attack_e" readonly>
+            </div>
+        </div> 
+        <img id="pokemon_comprado_1" src="../imagens/cardback.jpg" alt="card_comprado" onclick="chose_pokemon_1(); load_tab_1()">
+        <img id="deck_player_1" src="../imagens/cardback.jpg" alt="cardback" onclick="comprar_1()">
+    </div>
+    <div id="player_2" >
+        <div id="botoes_2" >
+            <input type="button" value="Attack"> <input type="button" value="Attack Epecial">
+            <div id="atributos_2" >
+                <h2>Atributos</h2>
+                Vida:<br><input type="number" name="vida_2" id="vida_2" readonly><br>
+                Attack:<br><input type="number" name="attack_2" id="attack_2" readonly><br>
+                AttackE<br><input type="number" name="attack_e_2" id="attack_e_2" readonly>
+
+            </div>
+        </div>
+        <img onclick="chose_pokemon_2(); load_tab_2()" id="pokemon_comprado_2" src="../imagens/cardback.jpg" alt="card_comprado_2">
+        <img onclick="comprar_2()" id="deck_player_2" src="../imagens/cardback.jpg" alt="cardback">
+
+    </div>
+    <input type="number" name="teste" id="teste">
+<script src="./banco_de_card.js" ></script>    
+<!--<script src="script.js"></script>-->
+</body>
+</html>

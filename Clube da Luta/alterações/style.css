@@ -1,0 +1,200 @@
+body{
+    color: white;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+    background: url('../imagens/background_site.jpg') no-repeat ;
+    background-size: 100%;
+}
+#cabecalho{
+    text-shadow: 0px 0px 10px black;
+}
+#body_2{
+    height: 782px;
+    margin-top: -20px;
+    background-color: rgba(255, 255, 255, 0.253);
+
+}
+#simulation {
+    text-align: center;
+    width: 1000px;
+}
+#treinador_id{
+    width: 100px;
+    text-align: center;
+    margin-top: -30px;
+}
+#botao{
+    margin-top: -5px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(240, 245, 245);
+    border-radius: 100px;
+}
+#botao:hover{
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(46, 48, 48);
+    border-radius: 100px;
+    scale: 1.1;
+    cursor: pointer;
+}
+#saudacao{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+#pokemon_comprado_1{
+    position: absolute;
+    top: -5px;
+    width: 300px;
+    left: 1300px;
+}
+#deck_player_1{
+    position: absolute;
+    top: 370px;
+    left: 1300px;
+    width: 300px;
+}
+#pokemon_comprado_2{
+    left: 0px;
+    position: absolute;
+    top: -5px;
+    width: 300px;
+}
+#deck_player_2{
+position: absolute;
+width: 300px;
+top: 370px;
+left: 0px;
+}
+#botoes_1{
+position: absolute;
+top: 670px;
+left: 730px;
+}
+#botoes_2 {
+    position: absolute;
+    top: 60px;
+    left: 730px;
+}
+#atributos_1 {
+    position: absolute;
+    left: 170px;
+    top: -260px;
+}
+#atributos_1 > h2 {
+    text-align: center;
+}
+#atributos_2 {
+    position: absolute;
+    left: -230px;
+    top: -20px;
+}
+#atributos_2 > h2 {
+    text-align: center;
+}
+
+/*@media screen and (min-width:1600px) {
+    
+
+body{
+    color: white;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+    background: url('../imagens/background_site.jpg') no-repeat ;
+    background-size: 100%;
+}
+#cabecalho{
+    text-shadow: 0px 0px 10px black;
+}
+#body_2{
+    height: 782px;
+    margin-top: -20px;
+    background-color: rgba(255, 255, 255, 0.253);
+
+}
+#simulation {
+    text-align: center;
+    width: 1000px;
+}
+#treinador_id{
+    width: 100px;
+    text-align: center;
+    margin-top: -30px;
+}
+#botao{
+    margin-top: -5px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(240, 245, 245);
+    border-radius: 100px;
+}
+#botao:hover{
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(46, 48, 48);
+    border-radius: 100px;
+    scale: 1.1;
+    cursor: pointer;
+}
+#saudacao{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+}
+@media screen and (min-width:1920px) {      
+
+body{
+    color: white;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+    background: url('../imagens/background_site.jpg') no-repeat ;
+    background-size: 100%;
+}
+#cabecalho{
+    text-shadow: 0px 0px 10px black;
+}
+#body_2{
+    height: 932px;
+    margin-top: -20px;
+    background-color: rgba(255, 255, 255, 0.253);
+
+}
+#simulation {
+    text-align: center;
+    width: 1000px;
+}
+#treinador_id{
+    width: 100px;
+    text-align: center;
+    margin-top: -30px;
+}
+#botao{
+    margin-top: -5px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(240, 245, 245);
+    border-radius: 100px;
+}
+#botao:hover{
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(46, 48, 48);
+    border-radius: 100px;
+    scale: 1.1;
+    cursor: pointer;
+}
+#saudacao{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+   
+}
+}
+*/
